@@ -10,11 +10,11 @@ public class Driver {
 		
 		counter.increment();
 		
-		System.out.println("Hasil Perhitungan coba:" + counter.getCount());
+		System.out.println("Hasil Perhitungan 1:" + counter.getCount());
 		
 		counter.decrement();
 		
-		System.out.println("Hasil Perhitungan coba:" + counter.getCount());
+		System.out.println("Hasil Perhitungan 2:" + counter.getCount());
 		
 	}
 
