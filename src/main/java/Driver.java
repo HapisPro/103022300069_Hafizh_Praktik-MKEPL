@@ -6,11 +6,11 @@ public class Driver {
 		
 		Counter counter = new Counter();
 		
-		System.out.println("Hasil Perhitungan coba:" + counter.getCount());
+		System.out.println("Hasil Perhitungan release:" + counter.getCount());
 		
 		counter.increment();
 		
-		System.out.println("Hasil Perhitungan 1:" + counter.getCount());
+		System.out.println("Hasil Perhitungan :" + counter.getCount());
 		
 		counter.decrement();
 		
