@@ -11,8 +11,8 @@ name: Java CI with Maven - MKEPL 103022300069
 on:
   pull_request:
     branches: [ "main" ]
-  # release:
-    # types: [created]
+  release:
+    types: [created]
 
 jobs:
   build:
@@ -46,5 +46,5 @@ jobs:
       run: mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=hapispro -Dsonar.projectKey=HapisPro_ci-praktik-mkepl
     - name: "publish to GitHub Packages Apache Maven"
       run: mvn deploy
-    #   env: 
-    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
